@@ -6,6 +6,9 @@ export default function ViewImageScreen() {
       //   <SafeAreaView>
 
       <View style={styles.page}>
+        {/* <Image source={require("../../asset/logo-red.png")}>  */}
+
+        {/* </Image> */}
         <StatusBar barStyle="light-content"> </StatusBar>
         <SafeAreaView>
           <View style={styles.container}>
@@ -31,7 +34,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
       flexDirection: "column",
-
   },
   top_bar: {
     flex: 1,
@@ -55,7 +57,9 @@ const styles = StyleSheet.create({
       flex: 1,
       // marginBottom: 400,
       marginTop: 70,
-  },
+      marginBottom: 70,
+      // hello: "something",
+  }, 
   image: {resizeMode: "contain" 
       
     }
