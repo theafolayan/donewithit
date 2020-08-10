@@ -11,32 +11,3 @@ export default function App() {
    
   );
 }
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#fff",
-//     alignItems: "center",
-//     justifyContent: "center",
-//   },
-//   logo: {
-//     flex: 1,
-//     justifyContent: "center",
-//     alignItems: "center",
-//     paddingTop: 300,
-//   },
-//   cta_container: {
-//     flex: 0.5,
-//     flexDirection: "column",
-//     alignItems:"flex-end"
-//   },
-//   red_button: {
-//     width: Dimensions.width,
-//     height: 60,
-//     backgroundColor: "#fc5c65",
-//   },
-//   green_button: {
-//     width: Dimensions.width,
-//     height: 60,
-//     backgroundColor: "#4ecdc4",
-//   },
-// });
