@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native'
 import AppText from '../../components/AppText';
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function WelcomeScreen(props) {
     return (

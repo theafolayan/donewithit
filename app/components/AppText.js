@@ -8,11 +8,31 @@ export default function AppText({children}) {
         </View>
     )
 }
-
+Platform.select({
+    ios: {
+        fontSize: 20,
+        fontFaimly: "Avenir"
+    },
+    android: {
+        fontSize: 18,
+        fontFaimly: "Roboto"
+    }
+})
 const styles = StyleSheet.create({
     text: {
+        // fontSize: 18,
+        color: "tomato",
+        ...Platform.select({
+    ios: {
+        fontSize: 20,
+        fontFamily: "Avenir"
+    },
+    android: {
         fontSize: 18,
-        fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir"
+        fontFamily: "Roboto"
+    }
+})
+
         
     }
 })
