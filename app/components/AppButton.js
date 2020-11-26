@@ -1,12 +1,13 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import {Text, StyleSheet, TouchableOpacity } from 'react-native'
 import colors from '../config/colors'
 
 export default function AppButton({title}) {
     return (
-        <View style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={ ()=>console.log('tapped')}> 
+        
             <Text style={styles.text}> {title} </Text>
-        </View>
+       </TouchableOpacity>
     )
 }
 const styles = StyleSheet.create({
