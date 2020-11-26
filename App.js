@@ -8,8 +8,8 @@ import ViewImageScreen from './app/screens/main/ViewImageScreen'
 export default function App() {
   return (
     //App root lives here 
-      // <WelcomeScreen></WelcomeScreen>
-    <ViewImageScreen/>
+      <WelcomeScreen></WelcomeScreen>
+    // <ViewImageScreen/>
    
   );
 }
