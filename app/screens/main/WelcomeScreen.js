@@ -14,7 +14,9 @@ export default function WelcomeScreen(props) {
             </View>
             {/* <View style={styles.loginButton}></View> */}
             <View style={styles.buttonsContainer}> 
-                <AppButton title="Login" />
+                <AppButton title="Login" onPress={() => {
+                    console.log('tapped');
+                }}/>
                 <AppButton title="Register" />
             </View>
         </ImageBackground>
@@ -26,16 +28,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "flex-end",
         alignItems: "center"
-    },
-    loginButton: {
-        height: 70,
-        width: "100%",
-        backgroundColor: "#fc5c65"
-    },
-    registerButton: {
-        width: "100%",
-        height: 70,
-        backgroundColor: "#4ecdc4"
     },
     logo: {
         width: 100,
