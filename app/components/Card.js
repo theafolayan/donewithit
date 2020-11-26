@@ -8,7 +8,7 @@ export default function Card({title, subtitle, image}) {
         <View style={styles.card}>
             <Image source={image} style={styles.image} />
             <View style={styles.detailsContainer}> 
-            <AppText> {title} </AppText>
+            <AppText style={styles.title}> {title} </AppText>
             <AppText> { subtitle}</AppText>
             </View>
         </View>
@@ -28,5 +28,7 @@ const styles = StyleSheet.create({
     detailsContainer: {
         padding: 20
     },
-
+    title: {
+        marginBottom: 7
+    },
 })
