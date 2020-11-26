@@ -7,18 +7,14 @@ import WelcomeScreen from './app/screens/main/WelcomeScreen'
 // import ViewImageScreen from './app/screens/main/ViewImageScreen'
 import Card from "./app/components/Card";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import ItemListScreen from './app/screens/ItemListScreen';
 
 export default function App() {
   return (
     //App root lives here 
       // <WelcomeScreen></WelcomeScreen>
-    <View style={{padding: 20, paddingTop: 100, backgroundColor: "#f8f4f4"}} >
-      <Card title="Red Chair for sale"
-      subtitle="$100"
-      image={require('./assets/chair.jpg')}
-    />
-      {/* <AppButton title="Login" /> */}
-    </View>
+    <ItemListScreen> </ItemListScreen>
+  
     
     // <ViewImageScreen/>
     // <SafeAreaView style={{
