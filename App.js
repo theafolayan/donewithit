@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import colors from './app/config/colors'
 import { StyleSheet, Text, View, Image, SafeAreaView, ImageBackground, Dimensions, TouchableOpacity } from 'react-native';
 // import WelcomeScreen from './app/screens/WelcomeScreen'
 import WelcomeScreen from './app/screens/main/WelcomeScreen'
@@ -11,13 +12,21 @@ export default function App() {
     //App root lives here 
       <WelcomeScreen></WelcomeScreen>
     // <ViewImageScreen/>
-  //   <SafeAreaView style={{
-  //     flex: 1,
-  //     justifyContent: "center",
-  //     alignItems: "center"
-  //   }}> 
-  // <MaterialCommunityIcons name="email" size="60" color="tomato"/>
-  //   </SafeAreaView>
+    // <SafeAreaView style={{
+    //   flex: 1,
+    //   justifyContent: "center",
+    //   alignItems: "center"
+    // }}> 
+    //   {/* <MaterialCommunityIcons name="email" size="60" color="tomato"/> */}
+    //   <TouchableOpacity style={{
+    //     backgroundColor: colors.primary,
+    //     paddingHorizontal: 150,
+    //     paddingVertical: 15,
+    //     borderRadius: 100/1
+    //   }}> 
+    //     <Text style={{color: "white"}}> Login</Text>
+    //   </TouchableOpacity>
+    // </SafeAreaView>
    
   );
 }
