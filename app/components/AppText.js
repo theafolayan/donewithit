@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, Platform } from 'react-native'
 
-export default function OkText({children}) {
+export default function AppText({children}) {
     return (
         <View>
             <Text  style={styles.text}>{children}</Text>
@@ -12,7 +12,7 @@ export default function OkText({children}) {
 const styles = StyleSheet.create({
     text: {
         fontSize: 18,
-        fontFamily: Platform.Os === "android" ? "Roboto" : "Avenir"
+        fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir"
         
     }
 })

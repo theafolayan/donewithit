@@ -1,12 +1,13 @@
 import React from 'react'
-import { StyleSheet, Text, View,Image, ImageBackground } from 'react-native'
+import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native'
+import AppText from '../../components/AppText';
 
 export default function WelcomeScreen(props) {
     return (
         <ImageBackground source={require('../../../assets/background.jpg')} style={styles.background}> 
             <View style={styles.logoContainer}> 
             <Image style={styles.logo} source={require("../../../assets/logo-red.png")}></Image>
-            <Text> Sell what you don't need!</Text>
+            <AppText> Sell what you don't need!</AppText>
             </View>
             <View style={styles.loginButton}></View>
             <View style={styles.registerButton}></View>
