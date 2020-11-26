@@ -7,17 +7,18 @@ import AppButton from '../../components/AppButton';
 export default function WelcomeScreen(props) {
     // console.log('Hello');
     return (
-        <ImageBackground source={require('../../../assets/background.jpg')} style={styles.background}> 
+        <ImageBackground blurRadius={10} source={require('../../../assets/background.jpg')} style={styles.background}> 
             <View style={styles.logoContainer}> 
             <Image style={styles.logo} source={require("../../../assets/logo-red.png")}></Image>
-            <AppText> Sell what you don't need!</AppText>
+                {/* <AppText> Sell what you don't need!</AppText> */}
+                <Text style={styles.tagline}> Sell what you don't need!</Text>
             </View>
             {/* <View style={styles.loginButton}></View> */}
             <View style={styles.buttonsContainer}> 
                 <AppButton title="Login" onPress={() => {
                     console.log('tapped');
                 }}/>
-                <AppButton title="Register" />
+                <AppButton title="Register" color="secondary"/>
             </View>
         </ImageBackground>
     )
@@ -34,12 +35,17 @@ const styles = StyleSheet.create({
         height: 100,
     },
     buttonsContainer: {
-        width: "100%",
+        width: "90%",
     },
     logoContainer: {
         position: "absolute",
         top: 70,
         alignItems: "center"
+    },
+    tagline: {
+        fontSize: 25,
+        fontWeight: "600",
+        paddingVertical: 20,
     }
     
 })

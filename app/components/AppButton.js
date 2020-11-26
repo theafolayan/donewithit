@@ -18,6 +18,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
         width: "100%",
         padding: 15,
+        marginVertical: 10,
+        // marginHorizontal: 10,
     },
     text: {
         color: colors.white,
