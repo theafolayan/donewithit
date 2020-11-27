@@ -7,9 +7,11 @@ export default function ViewImageScreen() {
     return (
         <View style={styles.container}> 
             <View style={styles.closeIcon}>
-                <MaterialCommunityIcons name="close" color="white" size={ 30}/>
+                <MaterialCommunityIcons name="close" color="white" size={ 35}/>
             </View>
-            <View style={styles.deleteIcon}></View>
+            <View style={styles.deleteIcon}>
+                <MaterialCommunityIcons name="trash-can-outline" color="white" size={35} />
+            </View>
             <Image resizeMode="contain" style={styles.image} source={require("../../../assets/chair.jpg")}/>
         </View>
     )
@@ -23,9 +25,6 @@ const styles = StyleSheet.create({
         left: 30
     },
     deleteIcon: {
-        width: 50,
-        height: 50,
-        backgroundColor: "#4ecdc4",
         position: "absolute",
         top: 40,
         right: 30
