@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
 import AppText from '../../components/AppText'
+import ListItem from '../../components/ListItem'
 import colors from '../../config/colors'
 
 export default function ListingDetailScreen() {
@@ -11,6 +12,7 @@ export default function ListingDetailScreen() {
             <AppText style={styles.title}> Red Jacket for sale!</AppText>
             <AppText style={styles.price}> $100 </AppText>
             </View>
+            <ListItem title="Most Hamedani" image= {require('../../../assets/chair.jpg')} subTitle="7 Listings"> </ListItem>
         </View>
     )
 }
