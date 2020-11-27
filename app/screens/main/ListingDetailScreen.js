@@ -29,6 +29,9 @@ const styles = StyleSheet.create({
          padding: 20,      
     },
     price: {
-        color: colors.secondary
+        color: colors.secondary,
+        fontSize: 20,
+        fontWeight: "bold",
+        marginVertical: 10,
     }
 })
