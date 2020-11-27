@@ -9,13 +9,12 @@ import Card from "./app/components/Card";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import ItemListScreen from './app/screens/ItemListScreen';
 import ListingDetailScreen from './app/screens/main/ListingDetailScreen';
+import ViewImageScreen from './app/screens/main/ViewImageScreen';
 
 export default function App() {
   return (
     //App root lives here 
-      // <WelcomeScreen></WelcomeScreen>
-    // <ItemListScreen> </ItemListScreen>
-    <ListingDetailScreen/>
+    <ViewImageScreen />
   
     
     // <ViewImageScreen/>
