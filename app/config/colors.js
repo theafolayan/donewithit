@@ -2,5 +2,6 @@ export default {
     primary: "#fc5c65",
     secondary: "#4ecdc4",
     black: "#000",
-    white: "#ffe"
+    white: "#ffe",
+    greyedOut: "#6e6e69",
 };
