@@ -67,7 +67,8 @@ export default function MessagesScreen() {
               <ListItem
                 title={item.title}
                 subTitle={item.description}
-                image={item.image}
+                    image={item.image}
+                    onPress= {()=>console.log(item.id + " clicked")}
               />
             )}
             ItemSeparatorComponent={ListItemSeperator}
