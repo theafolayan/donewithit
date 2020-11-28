@@ -18,8 +18,8 @@ export default function App() {
     //App root lives here 
     // <ViewImageScreen />
     // <Screen/>
-    // <MessagesScreen/>
-    <ItemListScreen/>
+    <MessagesScreen/>
+    // <ItemListScreen/>
   
     
     // <ViewImageScreen/>
