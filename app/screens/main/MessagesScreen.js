@@ -3,6 +3,7 @@ import { FlatList, ScrollView, View } from 'react-native';
 import ListItem from '../../components/ListItem';
 import Screen from '../Screen';
 import ListItemSeperator from '../../components/ListItemSeperator';
+import ListItemDeleteAction from '../../components/ListItemDeleteAction';
 const messages = [
   {
     id: 1,
@@ -57,7 +58,6 @@ const messages = [
 export default function MessagesScreen() {
     return (
       <Screen>
-        <ScrollView>
           <FlatList
             data={messages}
             keyExtractor={(message) => message.id.toString()}
@@ -68,19 +68,13 @@ export default function MessagesScreen() {
                     image={item.image}
                     onPress={() => console.log(item.id + " clicked")}
                     renderRightActions={
-                        () => (<View style={{
-                                backgroundColor: "red",
-                                width: 70
-                            }}> 
-
-                            </View>)
-                            
+                        ListItemDeleteAction
+                        
                     }
               />
             )}
             ItemSeparatorComponent={ListItemSeperator}
           />
-        </ScrollView>
       </Screen>
     );
 }
