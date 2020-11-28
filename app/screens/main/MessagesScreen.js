@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, ScrollView } from 'react-native';
+import { FlatList, ScrollView, View } from 'react-native';
 import ListItem from '../../components/ListItem';
 import Screen from '../Screen';
 import ListItemSeperator from '../../components/ListItemSeperator';
@@ -66,7 +66,16 @@ export default function MessagesScreen() {
                 title={item.title}
                 subTitle={item.description}
                     image={item.image}
-                    onPress= {()=>console.log(item.id + " clicked")}
+                    onPress={() => console.log(item.id + " clicked")}
+                    renderRightActions={
+                        () => (<View style={{
+                                backgroundColor: "red",
+                                width: 70
+                            }}> 
+
+                            </View>)
+                            
+                    }
               />
             )}
             ItemSeparatorComponent={ListItemSeperator}
