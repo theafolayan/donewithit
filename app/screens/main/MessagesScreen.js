@@ -1,10 +1,8 @@
 import React from 'react'
 import { FlatList, ScrollView } from 'react-native';
 import ListItem from '../../components/ListItem';
-import { Constants } from "expo-constants";
 import Screen from '../Screen';
 import ListItemSeperator from '../../components/ListItemSeperator';
-// console.log()
 const messages = [
   {
     id: 1,
