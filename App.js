@@ -10,11 +10,13 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import ItemListScreen from './app/screens/ItemListScreen';
 import ListingDetailScreen from './app/screens/main/ListingDetailScreen';
 import ViewImageScreen from './app/screens/main/ViewImageScreen';
+import MessagesScreen from './app/screens/main/MessagesScreen';
 
 export default function App() {
   return (
     //App root lives here 
-    <ViewImageScreen />
+    // <ViewImageScreen />
+    <MessagesScreen/>
   
     
     // <ViewImageScreen/>

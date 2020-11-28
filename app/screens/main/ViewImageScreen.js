@@ -29,12 +29,12 @@ const styles = StyleSheet.create({
         top: 40,
         right: 30
     },
-        container: {
-            backgroundColor: "#000",
-            flex: 1
-        },
-        image: {
-            width: "100%",
-            height: "100%"
-        }
+    container: {
+        backgroundColor: "#000",
+        flex: 1
+    },
+    image: {
+        width: "100%",
+        height: "100%"
+    }
     });
