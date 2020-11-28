@@ -11,11 +11,13 @@ import ItemListScreen from './app/screens/ItemListScreen';
 import ListingDetailScreen from './app/screens/main/ListingDetailScreen';
 import ViewImageScreen from './app/screens/main/ViewImageScreen';
 import MessagesScreen from './app/screens/main/MessagesScreen';
+import Screen from './app/screens/Screen';
 
 export default function App() {
   return (
     //App root lives here 
     // <ViewImageScreen />
+    // <Screen/>
     <MessagesScreen/>
   
     
