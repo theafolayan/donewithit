@@ -12,6 +12,6 @@ const styles = StyleSheet.create({
     seperator: {
         width: "100%",
         height: 1,
-        backgroundColor: colors.light    }
+        backgroundColor: colors.light
+    }
 })
-

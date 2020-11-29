@@ -68,8 +68,9 @@ export default function MessagesScreen() {
                     image={item.image}
                     onPress={() => console.log(item.id + " clicked")}
                     renderRightActions={
-                        ListItemDeleteAction
-                        
+                        () => <ListItemDeleteAction onPress={() => {
+                            console.log(item.id)
+                        }}/>
                     }
               />
             )}
