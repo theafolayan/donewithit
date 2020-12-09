@@ -23,7 +23,8 @@ export default function ListItem({title, subTitle, image, ImageComponent, onPres
 const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
-        padding: 15,
+    padding: 15,
+        backgroundColor: colors.white
     },
     image: {
         width: 70,
