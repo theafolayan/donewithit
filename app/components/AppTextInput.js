@@ -9,7 +9,7 @@ import defaultStyles  from "../config/styles";
 export default function AppTextInput({icon, placeholder}) {
     return (
         <View style={styles.container}>
-            {icon && <MaterialCommunityIcons name="email" size={20} color={defaultStyles.colors.medium} style={ styles.icon}/>}
+            {icon && <MaterialCommunityIcons name={icon} size={20} color={defaultStyles.colors.medium} style={ styles.icon}/>}
             <TextInput style={defaultStyles.text} placeholder={ placeholder}/>
             
         </View>
@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         flexDirection: "row",
         width: "100%",
-        // height: 40,
         padding: 15,
         marginVertical: 10
 
