@@ -38,10 +38,12 @@ export default function AccountScreen() {
                   ItemSeparatorComponent ={ListItemSeperator}
                   data={menuItems}
                   keyExtractor={menuItem => menuItem.title}
-                  renderItem={({ item }) => <ListItem title={item.title} ImageComponent={ 
+                  renderItem={({ item }) => <ListItem title={item.title} IconComponent={ 
                       <Icon name={item.icon.name} backgroundColor={ item.icon.backgroundColor}/>
                   }/>} />
           </View>
+
+          <ListItem title="Log out" IconComponent={ <Icon name= "logout" backgroundColor="#ffe66d"/>}/>
     </Screen>
   );
 }
