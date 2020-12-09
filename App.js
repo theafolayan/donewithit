@@ -12,13 +12,21 @@ import ListingDetailScreen from './app/screens/main/ListingDetailScreen';
 import ViewImageScreen from './app/screens/main/ViewImageScreen';
 import MessagesScreen from './app/screens/main/MessagesScreen';
 import Screen from './app/screens/Screen';
+import Icon from './app/components/Icon';
 
 export default function App() {
   return (
     //App root lives here 
     // <ViewImageScreen />
     // <Screen/>
-    <MessagesScreen/>
+    // <MessagesScreen/>
+    <Screen> 
+      <Icon name="email"
+        size={50}
+        backgroundColor="red"
+        iconColor = "white"
+      />
+    </Screen>
     // <ItemListScreen/>
   
     

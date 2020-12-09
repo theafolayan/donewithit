@@ -21,9 +21,11 @@ const messagesList = [
 
 export default function MessagesScreen() {
   const [messages, setMessages] = useState(messagesList);
+  const [refreshing, setRefreshing] = useState(false)
   const handleDelete = message => {
     setMessages(messages.filter(m => m.id !== message.id));
   }
+
     return (
       <Screen>
           <FlatList
@@ -42,7 +44,18 @@ export default function MessagesScreen() {
                     }
               />
             )}
-            ItemSeparatorComponent={ListItemSeperator}
+          ItemSeparatorComponent={ListItemSeperator}
+          refreshing={refreshing}
+          onRefresh={() => {
+            setMessages([
+              {
+                id: 2,
+                title: "Hello enquiry",
+                description: "lorem ipsum sit dolor amet",
+                image: require("../../../assets/chair.jpg"),
+              },
+            ]);
+          }}
           />
       </Screen>
     );

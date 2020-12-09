@@ -11,6 +11,8 @@ export default function Screen({children}) {
 }
 const styles = StyleSheet.create({
     screen: {
-        paddingTop: Constants.statusBarHeight
+        paddingTop: Constants.statusBarHeight,
+        // backgroundColor: "yellow",
+        flex: 1,
     }
 })
