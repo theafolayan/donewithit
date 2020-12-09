@@ -15,7 +15,7 @@ import defaultStyles from "../config/styles";
 import AppText from "./AppText";
 import Screen from "../screens/Screen";
 import PickerItem from "./PickerItem";
-
+import Picker from 'react-native'
 export default function AppPicker({ icon, items, onSelectItem, selectedItem, placeholder }) {
   const [modalVisible, setmodalVisible] = useState(false);
   return (
