@@ -1,6 +1,7 @@
 import React from 'react'
 import { FlatList, StyleSheet } from 'react-native'
 import Card from '../components/Card';
+import colors from '../config/colors';
 import Screen from './Screen';
 
 
@@ -17,29 +18,12 @@ const listings = [
     price: 100,
     image: require("../../assets/chair.jpg"),
   },
-  {
-    id: 3,
-    title: "Red Jacket for sale",
-    price: 100,
-    image: require("../../assets/chair.jpg"),
-  },
-  {
-    id: 4,
-    title: "Red Jacket for sale",
-    price: 100,
-    image: require("../../assets/chair.jpg"),
-  },
-  {
-    id: 5,
-    title: "Red Jacket for sale",
-    price: 100,
-    image: require("../../assets/chair.jpg"),
-  },
+
 ];
 
 export default function ListingsScreen() {
     return (
-        <Screen> 
+        <Screen style={styles.screen}> 
         <FlatList data={listings}
           keyExtractor={listing => listing.id.toString()}
           renderItem={({ item }) => <Card
@@ -48,3 +32,10 @@ export default function ListingsScreen() {
        </Screen>
     )
 }
+const styles = StyleSheet.create({
+  screen: {
+    padding: 20,
+    // backgroundColor: colors.dark
+  }
+})
+
