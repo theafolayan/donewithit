@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import colors from "../config/colors";
 import { MaterialCommunityIcons} from "@expo/vector-icons";
 
-export default function Icon({ name, size = 20, backgroundColor = colors.black, iconColor = "yellow"}) {
+export default function Icon({ name, size = 40, backgroundColor = colors.black, iconColor = colors.white}) {
     return <View style={{
         width: size,
         height: size,

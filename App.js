@@ -13,6 +13,7 @@ import ViewImageScreen from './app/screens/main/ViewImageScreen';
 import MessagesScreen from './app/screens/main/MessagesScreen';
 import Screen from './app/screens/Screen';
 import Icon from './app/components/Icon';
+import ListItem from './app/components/ListItem';
 
 export default function App() {
   return (
@@ -21,11 +22,13 @@ export default function App() {
     // <Screen/>
     // <MessagesScreen/>
     <Screen> 
-      <Icon name="email"
+      {/* <Icon name="email"
         size={50}
         backgroundColor="red"
         iconColor = "white"
-      />
+      /> */}
+      <ListItem title="My title"
+        ImageComponent = {<Icon name="email"/>} />
     </Screen>
     // <ItemListScreen/>
   
