@@ -7,6 +7,7 @@ import AppTextInput from "../../components/AppTextInput";
 import Screen from "../Screen";
 import AppButton from "../../components/AppButton";
 import ErrorMessage from "../../components/ErrorMessage";
+import SubmitButton from "../../components/SubmitButton";
 
 const validationSchema = Yup.object().shape({
   email: Yup.string().required().email().label("Email"),
@@ -53,7 +54,8 @@ export default function LoginScreen() {
               }}
             />
             <ErrorMessage visible={touched.password} error={errors.password} />
-            <AppButton title="Login" onPress={handleSubmit} />
+            {/* <AppButton title="Login" onPress={handleSubmit} /> */}
+            <SubmitButton title="Login" />
           </>
         )}
       </Formik>
