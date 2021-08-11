@@ -50,16 +50,18 @@ const styles = StyleSheet.create({
     paddingTop: StatusBar.length + 100,
   },
   bottom_cta: {
-    flex: 1,
+    flex: 0.5,
     flexDirection: "column",
   },
   btn_red: {
     backgroundColor: "#fc5c65",
     flex: 1,
+    // height: 50,
   },
   btn_green: {
     backgroundColor: "#4ecdc4",
     flex: 1,
+    // height: 50,
   },
 });
 export default WelcomeScreen;

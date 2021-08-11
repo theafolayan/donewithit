@@ -28,7 +28,7 @@ export default function LoginScreen() {
         {({ handleChange, handleSubmit, errors, setFieldTouched, touched }) => (
           <>
             <AppTextInput
-              placeholder="email"
+              placeholder="Email"
               icon="email"
               autoCapitalize="none"
               onChangeText={handleChange("email")}
@@ -41,19 +41,18 @@ export default function LoginScreen() {
             />
             <ErrorMessage visible={touched.email} error={errors.email} />
             <AppTextInput
-              placeholder="Password"
-              icon="lock"
               autoCapitalize="none"
               autoCorrect={false}
-              onBlur={() => {
-                setFieldTouched("password");
-              }}
-              textContentType="emailAddress"
+              placeholder="Password"
+              icon="lock"
               textContentType="password"
               secureTextEntry
               onChangeText={handleChange("password")}
+              onBlur={() => {
+                setFieldTouched("password");
+              }}
             />
-            <ErrorMessage visible = {touched.password} error={errors.password} />
+            <ErrorMessage visible={touched.password} error={errors.password} />
             <AppButton title="Login" onPress={handleSubmit} />
           </>
         )}
